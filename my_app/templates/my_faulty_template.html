@@ -1,0 +1,12 @@
+{% comment %} Form with no validation of any kind. Manually crafted {% endcomment %}
+<form action="" method="GET">
+	Name: <input type="text" name="name" placeholder="name">
+	Email: <input type="text" name="email" placeholder="email">
+	Message: <textarea name="message" placeholder="Some space for your request"></textarea>
+	<input type="submit">
+</form>
+
+{% comment %} Now just show what we got on server {% endcomment %}
+<p>Name: {{ name }}</p>
+<p>Email: {{ email }}</p>
+<p>Message: {{ message }}</p>
